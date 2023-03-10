@@ -10,7 +10,6 @@ link = f"https://femboiluver420{j}"
 if sys.version_info[0] < 3:
     f = urllib.urlopen(link)
     clk = f.read()
-    #print("WELCOME 2 DA HYPERNET :3")
 else:
     import urllib.request
     f = urllib.request.urlopen(link)
